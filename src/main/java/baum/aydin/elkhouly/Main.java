@@ -1,21 +1,25 @@
 package baum.aydin.elkhouly;
-import Classes.Item;
+
 import Classes.ItemIdentification;
-import Classes.Warehouse;
+import Classes.ItemNotFoundException;
 
 import java.util.ArrayList;
-import java.util.Optional;
-import java.util.UUID;
 
 public class Main {
-    public static void main(String[] args) {
-        Warehouse amazon = new Warehouse(9);
-        Item stift = new Item("stift");
-        amazon.addItem(stift);
-        ArrayList<Optional<Item>> items = new ArrayList<Optional<Item>>();
+    public static void main(String[] args) throws ItemNotFoundException {
+        //create list with 100 random numbers
+        ArrayList<Integer> randomNumbers = new ArrayList<>();
+        for (int i = 0; i < 100; i++) {
+            randomNumbers.add((int) (Math.random() * 1000000000));
+        }
+        for(int i = 0; i < 100; i++) {
+            try {
+                ItemIdentification.lookupItem(randomNumbers.get(i));
+            } catch (ItemNotFoundException e) {
+                System.out.println(e.getMessage());
+            }
+            System.out.println(i);
 
-        String i = amazon.getinventory().toString();
-        System.out.println(items);
-        System.out.println(UUID.randomUUID());
+        }
     }
 }

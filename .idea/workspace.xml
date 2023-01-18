@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2dca48a5-b1c1-4fb3-9051-99d7e758c3bb" name="Changes" comment="Versandhaus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/BarcodeGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Classes/ItemIdentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/ItemIdentification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baum/aydin/elkhouly/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baum/aydin/elkhouly/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +32,9 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -51,12 +57,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baum.aydin.elkhouly.Main" />
@@ -121,7 +127,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674074055259</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Versandhaus">
+      <created>1674074268841</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674074268841</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Versandhaus">
+      <created>1674074339415</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674074339415</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

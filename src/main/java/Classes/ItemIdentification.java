@@ -1,25 +1,17 @@
 package Classes;
 
-public class ItemIdentification {
-    private Item item;
-    private String barcode;
+import java.util.ArrayList;
 
-    public ItemIdentification(String barcode) {
+public class ItemIdentification {
+    private Integer barcode;
+
+    public ItemIdentification(Integer barcode) {
         this.barcode = barcode;
         //this.item = lookupItem(barcode);
     }
 
-    public Item getItem() {
-        return item;
-    }
-
-    public String getBarcode() {
-        return barcode;
-    }
-
-    private Item lookupItem(String barcode) throws ItemNotFoundException {
-
-        for (Item item :/*List of all Items still needs to be implemented somewhere somehow*/) {
+    static public Item lookupItem(Integer barcode) throws ItemNotFoundException {
+        for (Item item : Item.getItemList()) {
             if (item.getBarcode().equals(barcode)) {
                 return item;
             }
@@ -27,6 +19,5 @@ public class ItemIdentification {
         // If item is not found, throw an exception
         throw new ItemNotFoundException("Item not found for barcode: " + barcode);
     }
-
 
 }
