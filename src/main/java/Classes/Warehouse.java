@@ -4,7 +4,7 @@ import java.util.Optional;
 
 public class Warehouse {
     static private Integer capacity;
-    private ArrayList<Optional<Item>> inventory;
+    private final ArrayList<Optional<Item>> inventory;
 
     public Warehouse(int capacity) {
         this.capacity = capacity;
