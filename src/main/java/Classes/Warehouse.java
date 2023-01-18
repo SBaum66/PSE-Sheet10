@@ -1,19 +1,42 @@
 package Classes;
-
-import java.awt.*;
+import java.util.ArrayList;
+import java.util.Optional;
 
 public class Warehouse {
-    private List inventory;
-    private Integer capacity;
-    private Item item;
-    private Integer value;
+    static private Integer capacity;
+    private ArrayList<Optional<Item>> inventory;
 
-    public Warehouse(Item item,Integer capacity) {
-        this.item = item;
+    public Warehouse(int capacity) {
         this.capacity = capacity;
-    }
-    public Item getItem() {
-        return item;
+        inventory = new ArrayList<Optional<Item>>();
+        for (int i = 0; i < capacity; i++) {
+            inventory.add(Optional.empty());
+        }
     }
 
+    public Integer getCapacity() {
+        return capacity;
+    }
+
+    public ArrayList<Optional<Item>> getinventory() {
+        return inventory;
+    }
+
+    public void addItem(Item item) {
+        for (int i = 0; i < inventory.size(); i++) {
+            if (inventory.get(i).isEmpty()) {
+                inventory.set(i, Optional.of(item));
+                break;
+            }
+        }
+    }
+
+    public Optional<Item> removeItem(int inventoryIndex) {
+        if (inventoryIndex < 0 || inventoryIndex >= inventory.size() || !inventory.get(inventoryIndex).isPresent()) {
+            return Optional.empty();
+        }
+        Optional<Item> removedItem = inventory.get(inventoryIndex);
+        inventory.set(inventoryIndex, Optional.empty());
+        return removedItem;
+    }
 }

@@ -1,15 +1,25 @@
 package Classes;
 
+import java.util.UUID;
+
 public class Item {
     private String name;
-    private Integer price;
+    private String id;
+    private Integer barcode;
 
-    public Item(String name, Integer price) {
+    public Item(String name) {
         this.name = name;
-        this.price = price;
+        this.id = UUID.randomUUID().toString();
     }
     public String getName() {
         return name;
+    }
+
+    public String getId() {
+        return id;
+    }
+    public Integer getBarcode() {
+        return barcode;
     }
 
 }

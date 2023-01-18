@@ -1,12 +1,14 @@
 package baum.aydin.elkhouly;
 import Classes.Item;
+import Classes.ItemIdentification;
 import Classes.Warehouse;
 
 public class Main {
-    static Item geodreieck = new Item("geodreieck", 5);
-    static Warehouse geoWH = new Warehouse(geodreieck,100);
-    static String t = geoWH.getItem().getName();
     public static void main(String[] args) {
-        System.out.println(t);
+        Warehouse amazon = new Warehouse(9);
+        Item stift = new Item("stift");
+        amazon.addItem(stift);
+        String i = amazon.getinventory().toString();
+        System.out.println(i);
     }
 }

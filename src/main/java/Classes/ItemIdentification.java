@@ -1,19 +1,32 @@
 package Classes;
 
 public class ItemIdentification {
-    private String name;
+    private Item item;
+    private String barcode;
 
-    //add setter
-    public void addItem(String string) {
-        Integer ??? = new Item(name, 0;
+    public ItemIdentification(String barcode) {
+        this.barcode = barcode;
+        //this.item = lookupItem(barcode);
     }
-    public void setName(String name) {
-        this.name = name;
-    }
-    //make new Item using id and name name Object via GUI
-    public ItemIdentification(String id, String name) {
 
-        this.name = name;
-
+    public Item getItem() {
+        return item;
     }
+
+    public String getBarcode() {
+        return barcode;
+    }
+
+    private Item lookupItem(String barcode) throws ItemNotFoundException {
+
+        for (Item item : item) {
+            if (item.getBarcode().equals(barcode)) {
+                return item;
+            }
+        }
+        // If item is not found, throw an exception
+        throw new ItemNotFoundException("Item not found for barcode: " + barcode);
+    }
+
+
 }
