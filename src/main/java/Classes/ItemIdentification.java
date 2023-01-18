@@ -14,6 +14,5 @@ public class ItemIdentification {
     public ItemIdentification(String id, String name) {
 
         this.name = name;
-
     }
 }
