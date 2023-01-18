@@ -19,7 +19,7 @@ public class ItemIdentification {
 
     private Item lookupItem(String barcode) throws ItemNotFoundException {
 
-        for (Item item : Warehouse.getInventory()) {
+        for (Item item :/*List of all Items still needs to be implemented somewhere somehow*/) {
             if (item.getBarcode().equals(barcode)) {
                 return item;
             }
