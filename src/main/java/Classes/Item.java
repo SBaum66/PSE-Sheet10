@@ -22,7 +22,7 @@ public class Item {
     public String getId() {
         return id;
     }
-    public Number getBarcode() {
+    public Integer getBarcode() {
         return barcode;
     }
 
