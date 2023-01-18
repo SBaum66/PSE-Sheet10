@@ -5,7 +5,7 @@ public class ItemIdentification {
 
     //add setter
     public void addItem(String string) {
-        Integer string = new Item(name, 0;
+        Integer ??? = new Item(name, 0;
     }
     public void setName(String name) {
         this.name = name;
