@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dca48a5-b1c1-4fb3-9051-99d7e758c3bb" name="Changes" comment="added Item and ItemIdentification Class">
+    <list default="true" id="2dca48a5-b1c1-4fb3-9051-99d7e758c3bb" name="Changes" comment="Versandhaus Software">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/ItemIdentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/ItemIdentification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Warehouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baum/aydin/elkhouly/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baum/aydin/elkhouly/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +24,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -93,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674042696334</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Versandhaus Software">
+      <created>1674046565567</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674046565567</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +122,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Maven Project with Warehouse Class and Main methode" />
     <MESSAGE value="added Item and ItemIdentification Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Item and ItemIdentification Class" />
+    <MESSAGE value="Versandhaus Software" />
+    <option name="LAST_COMMIT_MESSAGE" value="Versandhaus Software" />
   </component>
 </project>
