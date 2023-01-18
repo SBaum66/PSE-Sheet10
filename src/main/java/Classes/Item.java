@@ -2,9 +2,17 @@ package Classes;
 
 public class Item {
     private String name;
-    private String id;
+    private Integer price;
 
+    public Item(String name, Integer price) {
+        this.name = name;
+        this.price = price;
+    }
+    public String getName() {
+        return name;
+    }
 
 }
+
 
 
