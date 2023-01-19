@@ -13,6 +13,8 @@ public class ItemIdentification {
     static public Item lookupItem(Integer barcode) throws ItemNotFoundException {
         for (Item item : Item.getItemList()) {
             if (item.getBarcode().equals(barcode)) {
+                String r = item.toString() + item.getName() + item.getId();
+                System.out.print(r);
                 return item;
             }
         }

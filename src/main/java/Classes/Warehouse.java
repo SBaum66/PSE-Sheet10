@@ -3,22 +3,27 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 public class Warehouse {
-    static private Integer capacity;
+    private Integer capacity;
     private final ArrayList<Optional<Item>> inventory;
+    private ArrayList<Optional<String>> itemid;
 
-    public Warehouse(int capacity) {
+
+    public Warehouse(Integer capacity) {
         this.capacity = capacity;
-        inventory = new ArrayList<Optional<Item>>();
+        this.inventory = new ArrayList<Optional<Item>>();
+        this.itemid = new ArrayList<Optional<String>>();
         for (int i = 0; i < capacity; i++) {
+            itemid.add(Optional.empty());
             inventory.add(Optional.empty());
         }
+
     }
 
     public Integer getCapacity() {
         return capacity;
     }
 
-    public ArrayList<Optional<Item>> getinventory() {
+    public ArrayList<Optional<Item>> getInventory() {
         return inventory;
     }
 
@@ -26,6 +31,7 @@ public class Warehouse {
         for (int i = 0; i < inventory.size(); i++) {
             if (inventory.get(i).isEmpty()) {
                 inventory.set(i, Optional.of(item));
+                itemid.set(i, Optional.of(item.getId()));
                 break;
             }
         }
@@ -37,6 +43,7 @@ public class Warehouse {
         }
         Optional<Item> removedItem = inventory.get(inventoryIndex);
         inventory.set(inventoryIndex, Optional.empty());
+        itemid.set(inventoryIndex, Optional.empty());
         return removedItem;
     }
 }
