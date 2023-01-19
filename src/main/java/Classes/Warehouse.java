@@ -37,13 +37,22 @@ public class Warehouse {
         }
     }
 
-    public Optional<Item> removeItem(int inventoryIndex) {
-        if (inventoryIndex < 0 || inventoryIndex >= inventory.size() || !inventory.get(inventoryIndex).isPresent()) {
+    public Integer getCompartmentNuberOf(ItemIdentification identification) {
+        Integer Dingensens = 69;
+        Integer Dingsbums = Dingensens*2;
+        return(Dingsbums);
+    }
+
+    public Optional<Item> removeItem(int compartmentNumber) {
+        if (compartmentNumber < 0 || compartmentNumber >= inventory.size() || !inventory.get(compartmentNumber).isPresent()) {
             return Optional.empty();
         }
-        Optional<Item> removedItem = inventory.get(inventoryIndex);
-        inventory.set(inventoryIndex, Optional.empty());
-        itemid.set(inventoryIndex, Optional.empty());
+        Optional<Item> removedItem = inventory.get(compartmentNumber);
+        inventory.set(compartmentNumber, Optional.empty());
+        itemid.set(compartmentNumber, Optional.empty());
         return removedItem;
+    }
+    public Optional getItem(Integer compartmentNumber) {
+        return inventory.get(compartmentNumber);
     }
 }

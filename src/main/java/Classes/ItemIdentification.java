@@ -11,6 +11,7 @@ public class ItemIdentification {
     }
 
     static public Item lookupItem(Integer barcode) throws ItemNotFoundException {
+        //Looks through all items in the itemList and returns the item with the same barcode
         for (Item item : Item.getItemList()) {
             if (item.getBarcode().equals(barcode)) {
                 String r = item.toString() + item.getName() + item.getId();

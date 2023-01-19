@@ -22,9 +22,11 @@ public class Item {
     public String getId() {
         return id;
     }
+
     public Integer getBarcode() {
         return barcode;
     }
+
     public static ArrayList<Item> getItemList() {
         return itemList;
     }
