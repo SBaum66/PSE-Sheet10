@@ -1,5 +1,6 @@
 package baum.aydin.elkhouly;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.UUID;
 
@@ -11,6 +12,7 @@ public class Item {
     private static final ArrayList<Item> itemList = new ArrayList<>();
     public enum ItemType {Kugelschreiber,Geodreieck,Zirkel}
     private ItemType type;
+    private static ArrayList<Integer> barcodeList;
 
 //Constructor to create new Item object with random id and barcode
     public Item(String name, ItemType type) {
@@ -19,6 +21,7 @@ public class Item {
         this.barcode = (int) (Math.random() * 10000000);
         itemList.add(this);
         this.type = type;
+        barcodeList.add(this.barcode);
         }
     //get Name, Type, Is and Barcode of an Item
     public String getName() {
@@ -37,5 +40,6 @@ public class Item {
     public static ArrayList<Item> getItemList() {
         return itemList;
     }
+    public static ArrayList<Integer> getBarcodeList() {return barcodeList;}
 
 }
