@@ -3,6 +3,7 @@ package baum.aydin.elkhouly;
 import java.util.ArrayList;
 import java.util.UUID;
 
+//Objects of this class represent a Customer
 public class Customer {
     private static ArrayList<Customer> customerList = new ArrayList<Customer>();
     private String name;

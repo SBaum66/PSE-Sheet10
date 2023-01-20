@@ -1,16 +1,14 @@
 package baum.aydin.elkhouly;
 import baum.aydin.elkhouly.Item.ItemType;
-
-public class Company
-
-{
+//thic class represents the Company that is using this Software and creates a Warehouse for each Item Type
+public class Company{
     private String name;
     private Item item;
-    private Warehouse kugelschreiberWarehouse;
-    private Warehouse geodreieckWarehouse;
-    private Warehouse zirkelWarehouse;
+    private final Warehouse kugelschreiberWarehouse;
+    private  final Warehouse geodreieckWarehouse;
+    private final Warehouse zirkelWarehouse;
 
-//Constructor for Company, creates new Warehouse for each Item ItemType and sorts Items into their respective Warehouse
+//Constructor for Company, creates new Warehouse for each Item Type
     public Company(String name) {
         this.name = name;
         this.kugelschreiberWarehouse = new Warehouse(30);
@@ -29,6 +27,7 @@ public class Company
         return zirkelWarehouse;
     }
 
+    //Method that sorts Items into their respective Warehouse
     public void handleIncomingItem(Item item) {
                 if (item.getType() == ItemType.Kugelschreiber) {
                     this.kugelschreiberWarehouse.addItem(item);
