@@ -18,8 +18,16 @@ public class Warehouse {
         return capacity;
     }
 
-    public ArrayList<Optional<Item>> getinventory() {
-        return inventory;
+    public ArrayList<String> getInventory() {
+        ArrayList<String> names = new ArrayList<>();
+        for (Optional<Item> item : inventory) {
+            if (item.isPresent()) {
+                names.add(item.get().getName());
+            } else if (item.isEmpty()) {
+                names.add("Optional.empty");
+            }
+        }
+        return names;
     }
 
     public void addItem(Item item) {

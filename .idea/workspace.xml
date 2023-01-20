@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dca48a5-b1c1-4fb3-9051-99d7e758c3bb" name="Changes" comment="Versandhaus">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Classes/Buffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Classes/Customer.java" afterDir="false" />
+    <list default="true" id="2dca48a5-b1c1-4fb3-9051-99d7e758c3bb" name="Changes" comment="merged Classes into baum.aydin.elkhouly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/Warehouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baum/aydin/elkhouly/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baum/aydin/elkhouly/Company.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/baum/aydin/elkhouly/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baum/aydin/elkhouly/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baum/aydin/elkhouly/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baum/aydin/elkhouly/Warehouse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674078304407</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="merged Classes into baum.aydin.elkhouly">
+      <created>1674219804072</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674219804072</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +185,7 @@
     <MESSAGE value="Maven Project with Warehouse Class and Main methode" />
     <MESSAGE value="added Item and ItemIdentification Class" />
     <MESSAGE value="Versandhaus" />
-    <option name="LAST_COMMIT_MESSAGE" value="Versandhaus" />
+    <MESSAGE value="merged Classes into baum.aydin.elkhouly" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged Classes into baum.aydin.elkhouly" />
   </component>
 </project>

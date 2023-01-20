@@ -13,21 +13,23 @@ public class Company
 //Constructor for Company, creates new Warehouse for each Item ItemType and sorts Items into their respective Warehouse
     public Company(String name) {
         this.name = name;
-        Warehouse kugelschreiberWarehouse = new Warehouse(30);
-        Warehouse geodreieckWarehouse = new Warehouse(20);
-        Warehouse zirkelWarehouse = new Warehouse(10);
-        for (int i = 0; i < Item.getItemList().size(); i++) {
-            for (Item item : Item.getItemList()
-            ) {
-                if (item.getType() == ItemType.Kugelschreiber) {
-                    kugelschreiberWarehouse.addItem(item);
-                } else if (item.getType() == ItemType.Geodreieck) {
-                    geodreieckWarehouse.addItem(item);
-                } else zirkelWarehouse.addItem(item);
-            }
-        }
+        this.kugelschreiberWarehouse = new Warehouse(30);
+        this.geodreieckWarehouse = new Warehouse(20);
+        this.zirkelWarehouse = new Warehouse(10);
+
     }
-        public void handleIncomingItem(Item item) {
+    //Getter Methods for each Warehouse of the Company
+    public Warehouse getKugelschreiberWarehouse() {
+        return kugelschreiberWarehouse;
+    }
+    public Warehouse getGeodreieckWarehouse() {
+        return geodreieckWarehouse;
+    }
+    public Warehouse getZirkelWarehouse() {
+        return zirkelWarehouse;
+    }
+
+    public void handleIncomingItem(Item item) {
                 if (item.getType() == ItemType.Kugelschreiber) {
                     this.kugelschreiberWarehouse.addItem(item);
                 } else if (item.getType() == ItemType.Geodreieck) {
